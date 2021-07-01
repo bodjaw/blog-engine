@@ -12,8 +12,7 @@ public class CaptchaCode {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private String captchaId;
+    private String id;
     @Column(name = "time", nullable = false)
     private LocalDateTime dateTimeGeneratedCaptcha;
     @Column(name = "code", columnDefinition = "TEXT", nullable = false)

@@ -12,8 +12,7 @@ public class Tag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Integer tagId;
+    private Integer id;
     @Column(name = "name", nullable = false)
     private String tagText;
 

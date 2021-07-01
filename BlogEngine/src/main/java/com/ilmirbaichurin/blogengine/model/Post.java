@@ -12,7 +12,6 @@ import java.util.List;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
     private Integer id;
     @Column(name = "is_active", columnDefinition = "BOOLEAN", nullable = false)
     private Boolean isActive;

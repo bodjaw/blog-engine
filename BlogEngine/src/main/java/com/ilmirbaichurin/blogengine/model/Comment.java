@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "post_comments")
@@ -11,10 +13,10 @@ import java.time.LocalDateTime;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Integer commentId;
-    @Column(name = "parent_id")
-    private Integer parentCommentId;
+    private Integer id;
+    @ManyToOne
+    @JoinColumn(name = "parent_id")
+    private Comment parentId;
     @Column(name = "post_id", nullable = false)
     private Integer postId;
     @Column(name = "user_id", nullable = false)
@@ -31,4 +33,6 @@ public class Comment {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "post_id", insertable = false, updatable = false)
     private Post postComment;
+    @OneToMany(mappedBy = "parentId", cascade = CascadeType.ALL)
+    private Set<Comment> subComments = new HashSet<>();
 }

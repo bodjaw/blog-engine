@@ -12,7 +12,6 @@ public class PostVote {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
     private Integer id;
     @Column(name = "user_id", nullable = false)
     private Integer userId;

@@ -11,7 +11,7 @@ public class LinksTagsWithPosts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     private Integer linkId;
     @Column(name = "post_id", nullable = false)
     private Integer postId;

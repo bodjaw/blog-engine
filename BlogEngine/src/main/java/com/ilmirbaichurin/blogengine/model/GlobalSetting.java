@@ -11,8 +11,7 @@ public class GlobalSetting {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Integer settingId;
+    private Integer id;
     @Column(name = "code", nullable = false)
     private String settingSystemName;
     @Column(name = "name", nullable = false)
