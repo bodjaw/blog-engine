@@ -13,21 +13,14 @@ public class PostVote {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "user_id", nullable = false)
-    private Integer userId;
-    @Column(name = "post_id", nullable = false)
-    private Integer postId;
-    @Column(name = "time", nullable = false)
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "post_id")
+    private Post post;
+    @Column(name = "time")
     private LocalDateTime dateTimeLikeOrDislike;
-    @Column(name = "value", columnDefinition = "BOOLEAN", nullable = false)
-    private Boolean likeOrDislike;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id", insertable = false, updatable = false)
-    private User likedDislikedUser;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "post_id", insertable = false, updatable = false)
-    private Post postLikeDislike;
-
+    @Column(name = "value")
+    private Boolean value;
 }

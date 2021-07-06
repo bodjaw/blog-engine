@@ -13,11 +13,11 @@ public class CaptchaCode {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
-    @Column(name = "time", nullable = false)
+    @Column(name = "time")
     private LocalDateTime dateTimeGeneratedCaptcha;
-    @Column(name = "code", columnDefinition = "TEXT", nullable = false)
+    @Column(name = "code")
     private String codeOnCaptcha;
-    @Column(name = "secret_code", columnDefinition = "TEXT", nullable = false)
+    @Column(name = "secret_code")
     private String secretCode;
 
 }

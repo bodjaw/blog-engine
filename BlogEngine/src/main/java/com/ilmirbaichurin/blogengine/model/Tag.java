@@ -13,7 +13,7 @@ public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String tagText;
 
     @ManyToMany(cascade = CascadeType.ALL)

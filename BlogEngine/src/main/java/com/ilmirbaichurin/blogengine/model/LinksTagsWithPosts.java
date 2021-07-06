@@ -11,11 +11,11 @@ public class LinksTagsWithPosts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Integer linkId;
-    @Column(name = "post_id", nullable = false)
-    private Integer postId;
-    @Column(name = "tag_id", nullable = false)
-    private Integer tagId;
-
+    private Integer id;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "post_id")
+    private Post post;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "tag_id")
+    private Tag tag;
 }

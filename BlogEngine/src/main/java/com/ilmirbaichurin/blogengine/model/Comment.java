@@ -4,8 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "post_comments")
@@ -14,25 +14,18 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "parent_id")
-    private Comment parentId;
-    @Column(name = "post_id", nullable = false)
-    private Integer postId;
-    @Column(name = "user_id", nullable = false)
-    private Integer userId;
-    @Column(name = "time", nullable = false)
-    private LocalDateTime dateTimeComment;
-    @Column(name = "text", columnDefinition = "TEXT", nullable = false)
-    private String commentText;
-
-
+    private Comment parent;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id", insertable = false, updatable = false)
-    private User userComment;
+    @JoinColumn(name = "post_id")
+    private Post comment;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "post_id", insertable = false, updatable = false)
-    private Post postComment;
-    @OneToMany(mappedBy = "parentId", cascade = CascadeType.ALL)
-    private Set<Comment> subComments = new HashSet<>();
+    @JoinColumn(name = "user_id")
+    private User user;
+    private LocalDateTime time;
+    private String text;
+
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+    private List<Comment> subComments = new ArrayList<>();
 }

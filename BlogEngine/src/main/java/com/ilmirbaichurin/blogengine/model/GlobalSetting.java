@@ -12,10 +12,10 @@ public class GlobalSetting {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "code", nullable = false)
+    @Column(name = "code")
     private String settingSystemName;
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String settingName;
-    @Column(name = "value", nullable = false)
+    @Column(name = "value")
     private String settingValue;
 }

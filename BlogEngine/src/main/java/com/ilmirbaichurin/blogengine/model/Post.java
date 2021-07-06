@@ -13,21 +13,21 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "is_active", columnDefinition = "BOOLEAN", nullable = false)
+    @Column(name = "is_active")
     private Boolean isActive;
-    @Column(name = "moderation_status", nullable = false)
+    @Column(name = "moderation_status")
     private ModerationStatus moderationStatus;
-    @Column(name = "moderator_id")
-    private Integer moderatorId;
-    @Column(name = "user_id", nullable = false)
-    private Integer userId;
-    @Column(name = "time", nullable = false)
-    private LocalDateTime timeDateOfPublication;
-    @Column(name = "title", nullable = false)
-    private String postTitle;
-    @Column(name = "text", columnDefinition = "TEXT", nullable = false)
-    private String postText;
-    @Column(name = "view_count", nullable = false)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "moderator_id")
+    private User moderator;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
+    @Column(name = "time")
+    private LocalDateTime publicationTime;
+    private String title;
+    private String text;
+    @Column(name = "view_count")
     private Integer viewCount;
 
     @ManyToMany(cascade = CascadeType.ALL)
@@ -35,10 +35,12 @@ public class Post {
     joinColumns = @JoinColumn(name = "tag_id"),
     inverseJoinColumns = @JoinColumn(name = "post_id"))
     private List<Tag> postTags;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "postLikeDislike")
-    private List<PostVote> postLikesDislikes;
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
+    private List<PostVote> votes;
+    @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL)
+    private List<Comment> comments;
 
-    @OneToMany(mappedBy = "postComment", cascade = CascadeType.ALL)
-    private List<Comment> postComments;
+
+
 
 }
