@@ -1,6 +1,7 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.dao.model;
 
-import lombok.Data;
+import lombok.*;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -8,13 +9,19 @@ import java.util.List;
 
 @Entity
 @Table(name = "posts")
-@Data
+@NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@ToString
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(name = "is_active")
     private Boolean isActive;
+    @Enumerated(EnumType.STRING)
+    @Type(type = "org.hibernate.type.EnumType")
     @Column(name = "moderation_status")
     private ModerationStatus moderationStatus;
     @OneToOne(cascade = CascadeType.ALL)
@@ -40,7 +47,12 @@ public class Post {
     @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL)
     private List<Comment> comments;
 
+    public long getLikesCount() {
+        return votes.stream().filter(PostVote::getValue).count();
+    }
 
-
+    public long getDislikesCount() {
+        return votes.stream().filter(postVote -> !postVote.getValue()).count();
+    }
 
 }

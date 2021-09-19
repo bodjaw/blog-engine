@@ -1,6 +1,6 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.dao.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -8,7 +8,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "users")
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class User {
 
     @Id

@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.dao.model;
 
 import lombok.Data;
 

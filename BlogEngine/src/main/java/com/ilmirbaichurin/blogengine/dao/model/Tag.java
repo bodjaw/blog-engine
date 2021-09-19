@@ -1,20 +1,22 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.dao.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Table(name = "tags")
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Tag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @Column(name = "name")
-    private String tagText;
+    private String name;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "tag2post",

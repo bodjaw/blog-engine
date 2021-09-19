@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.dao.model;
 
 import lombok.Data;
 
@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "tag2post")
 @Data
+
 public class LinksTagsWithPosts {
 
     @Id
