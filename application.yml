@@ -6,6 +6,8 @@ spring:
     jpa:
       hibernate:
         ddl-auto: validate
+#  jpa:
+#    show-sql: true
 
 blog:
   title: HowCode

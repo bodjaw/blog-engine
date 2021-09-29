@@ -18,24 +18,14 @@ public class SettingsServiceImpl implements SettingService {
 
     @Override
     public SettingsResponse getGlobalSettings() {
-        SettingsResponse settingsResponse = new SettingsResponse();
         List<GlobalSetting> globalSettings = globalSettingsRepository.findAll();
-        boolean isMultiuserMode = false;
-        boolean isPostPreModeration = false;
-        boolean isStatisticsIsPublic = false;
-        if (globalSettings.get(0).getValue().equals("YES")) {
-            isMultiuserMode = true;
-        }
-        if (globalSettings.get(1).getValue().equals("YES")) {
-            isPostPreModeration = true;
-        }
-        if (globalSettings.get(2).getValue().equals("YES")) {
-            isStatisticsIsPublic = true;
-        }
+        boolean isMultiuserMode = settingModeConverter(globalSettings.get(0).getValue());
+        boolean isPostPreModeration = settingModeConverter(globalSettings.get(1).getValue());
+        boolean isStatisticsIsPublic = settingModeConverter(globalSettings.get(2).getValue());
+        return new SettingsResponse(isMultiuserMode, isPostPreModeration, isStatisticsIsPublic);
+    }
 
-        settingsResponse.setMultiuserMode(isMultiuserMode);
-        settingsResponse.setPostPremoderation(isPostPreModeration);
-        settingsResponse.setStatisticsIsPublic(isStatisticsIsPublic);
-        return settingsResponse;
+    private boolean settingModeConverter(String mode) {
+        return mode.equals("YES");
     }
 }

@@ -1,19 +1,17 @@
 package com.ilmirbaichurin.blogengine.service;
 
 import com.ilmirbaichurin.blogengine.dao.api.response.PostResponse;
-import com.ilmirbaichurin.blogengine.dao.api.response.PostsIndex;
+import com.ilmirbaichurin.blogengine.dao.api.response.dto.PostsDTO;
 import com.ilmirbaichurin.blogengine.dao.model.Post;
 import com.ilmirbaichurin.blogengine.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 public class PostServiceImpl implements PostService {
@@ -25,55 +23,53 @@ public class PostServiceImpl implements PostService {
     private static final String ZONE_ID = "Europe/Moscow";
     private static final int ANNOUNCE_LENGTH = 150;
 
-    private static final Map<String, Comparator<Post>> SORTING_MODES = new HashMap<>();
-
-    static {
-        SORTING_MODES.put(MODE_RECENT, Comparator.comparing(Post::getPublicationTime).reversed());
-        SORTING_MODES.put(MODE_POPULAR, (p1, p2) -> Integer.compare(p2.getComments().size(), p1.getComments().size()));
-        SORTING_MODES.put(MODE_BEST, (p1, p2) -> Integer.compare(p2.getVotes().size(), p1.getVotes().size()));
-        SORTING_MODES.put(MODE_EARLY, Comparator.comparing(Post::getPublicationTime));
-    }
-
-    private final PostRepository postRepository;
+    private final PostRepository repository;
 
     @Autowired
-    public PostServiceImpl(PostRepository postRepository) {
-        this.postRepository = postRepository;
+    public PostServiceImpl(PostRepository repository) {
+        this.repository = repository;
     }
 
     @Override
     public PostResponse getPostsInfo(int offset, int limit, String mode) {
-        List<Post> posts = postRepository.findAll();
+        if (offset < 0 || limit < 0) {
+            throw new RuntimeException("Invalid request.");
+        }
         PostResponse postResponse = new PostResponse();
-        if(posts.isEmpty()) {
+        PageRequest pageRequest = PageRequest.of(offset, limit);
+        Page<Post> postPage = getSortedPosts(mode, pageRequest);
+        List<Post> posts = null;
+        if (postPage != null) {
+            posts = postPage.getContent();
+        }
+        if(posts == null) {
             return postResponse;
         }
-        int count = posts.size();
-        postResponse.setPostCount(count);
-        int inxOfLast = count - 1;
-        if (offset < 0 || offset > inxOfLast) {
-            throw new RuntimeException("Invalid offset parameter.");
-        }
-        List<Post> postsForResponse = sortPosts(posts, mode);
-        if (offset == 0) {
-            return fillResponse(postsForResponse.subList(0, limit), postResponse); // при первом запросе
-        } else {
-            if((inxOfLast - offset) < limit) {
-                return fillResponse(postsForResponse.subList(offset, inxOfLast + 1), postResponse);
-            } else {
-                return fillResponse(postsForResponse.subList(offset, limit + 1), postResponse);
-            }
-        }
+        long postsCount = repository.count();
+        postResponse.setPostCount(postsCount);
+
+        return fillResponse(posts, postResponse);
     }
 
-    private List<Post> sortPosts(List<Post> posts, String mode) {
-        return posts.stream().sorted(SORTING_MODES.get(mode)).collect(Collectors.toList());
+    private Page<Post> getSortedPosts(String mode, PageRequest request) {
+        if (mode.equals(MODE_EARLY)) {
+            return repository.findEarlyPosts(request);
+        }
+        if (mode.equals(MODE_BEST)) {
+            return repository.findBestPosts(request);
+        }
+        if (mode.equals(MODE_POPULAR)) {
+            return repository.findPopularPosts(request);
+        }
+        if (mode.equals(MODE_RECENT)) {
+            return repository.findRecentPosts(request);
+        }
+        return repository.findAll(request);
     }
 
     private PostResponse fillResponse(List<Post> posts, PostResponse postResponse) {
-
         posts.forEach(post -> {
-            PostsIndex postsIndex = new PostsIndex.Builder()
+            PostsDTO postsDTO = new PostsDTO.Builder()
                     .id(post.getId())
                     .timestamp(toMillis(post.getPublicationTime()))
                     .user(post.getUser().getId(), post.getUser().getName())
@@ -84,7 +80,7 @@ public class PostServiceImpl implements PostService {
                     .commentCount(post.getComments().size())
                     .viewCount(post.getViewCount())
                     .build();
-            postResponse.add(postsIndex);
+            postResponse.add(postsDTO);
         });
         return postResponse;
     }

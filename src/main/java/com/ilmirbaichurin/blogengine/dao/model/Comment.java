@@ -27,5 +27,5 @@ public class Comment {
     private String text;
 
     @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
-    private List<Comment> subComments = new ArrayList<>();
+    private List<Comment> subComments;
 }

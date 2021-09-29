@@ -1,6 +1,7 @@
 package com.ilmirbaichurin.blogengine.dao.api.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ilmirbaichurin.blogengine.dao.api.response.dto.TagWithWeight;
 import lombok.Data;
 
 import java.util.ArrayList;

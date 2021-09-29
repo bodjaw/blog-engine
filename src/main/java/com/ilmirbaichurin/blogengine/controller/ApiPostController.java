@@ -25,6 +25,12 @@ public class ApiPostController {
     public ResponseEntity<PostResponse> posts(@RequestParam(value = "offset", defaultValue = "0") int offset,
                                               @RequestParam(value = "limit", defaultValue = "10") int limit,
                                               @RequestParam("mode") String mode) {
-        return ResponseEntity.ok(postService.getPostsInfo(offset, limit, mode));
+        PostResponse response;
+        try {
+            response = postService.getPostsInfo(offset, limit, mode);
+        } catch (RuntimeException exc) {
+            return ResponseEntity.badRequest().body(new PostResponse());
+        }
+        return ResponseEntity.ok(response);
     }
 }
