@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d2a049c-6d95-4d55-a6a4-1a4dbfed3285" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blogengine.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlogEngine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/BlogEngineApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/controller/ApiAuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/controller/ApiGeneralController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/controller/ApiPostController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/controller/DefaultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/InitResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/PostResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/PostsIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/SettingsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/TagResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/TagWithWeight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/CaptchaCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/GlobalSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/GlobalSettingValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/LinksTagsWithPosts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/ModerationStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/PostVote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/dao/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/repository/PostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/repository/SettingsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/repository/TagPostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/repository/TagRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/PostServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/SettingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/SettingsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/TagService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/TagServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/java/com/ilmirbaichurin/blogengine/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/db/migration/V1__Initial.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/db/migration/V2__Foreign_keys.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/db/migration/V3__Adding_global_settings.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/db/migration/V4__Insert_test_values.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/404.0307462e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/addComment.3bd0147c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/addText.3e32e758.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/app.a8078023.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/article.d31131f7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/articles.ab6c5fed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/baseArticle.4b2c7168.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/baseButton.f7cd099c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/baseNavbar.0c5366b4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/calendar.7ef4a90f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/calendarMonth.c4c06180.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/calendarTable.dc9a89bb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/chunk-vendors.29736c43.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/comment.2e97f697.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/editPost.c8f88f38.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/errorModal.fbaa6531.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/login.6bc2a293.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/loginHeader.5b0e4dcc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/loginRegistrationSuccess.a879d2f2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/mainPage.4f8b7404.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/moderationBlock.0feff8c7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/profile.9d56705d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/settings.fa684121.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/socialBlock.b00d958f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/stat.02b1e9f5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/tags.95166178.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/css/userSection.c1ee68c4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/default-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-500.3d291974.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-500.af3eb2e5.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-500italic.4661310e.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-500italic.59dbca61.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700.1b4bd659.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700.9880f0c6.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700italic.01e822b3.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-700italic.f2842125.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-italic.23699154.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-italic.44803401.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-regular.f5e9a4ea.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/fonts/roboto-v20-cyrillic_latin_cyrillic-ext-regular.fa18727a.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/img/icons-sprite.3d76bac4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/404.47dd94cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/404.47dd94cc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/addComment.8407ff71.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/addComment.8407ff71.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/addText.3b2c4c96.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/addText.3b2c4c96.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/app.cd27e4f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/app.cd27e4f1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/article.f9c6f0f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/article.f9c6f0f2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/articles.db25faa6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/articles.db25faa6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseArticle.d8032b02.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseArticle.d8032b02.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseButton.3a7bae3c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseButton.3a7bae3c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseNavbar.bbaecea2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/baseNavbar.bbaecea2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendar.2db04d5a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendar.2db04d5a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendarMonth.dd972471.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendarMonth.dd972471.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendarTable.25bd32c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/calendarTable.25bd32c3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/captcha.66dda667.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/captcha.66dda667.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/chunk-vendors.8772246c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/chunk-vendors.8772246c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/comment.7fb4fec6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/comment.7fb4fec6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/editPost.ce72759f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/editPost.ce72759f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/errorModal.af33cefc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/errorModal.af33cefc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/inputEmail.25efc46a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/inputEmail.25efc46a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/inputPassword.638924f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/inputPassword.638924f7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/login.61bd44e3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/login.61bd44e3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginChange.f7468ba7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginChange.f7468ba7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginHeader.c7e33100.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginHeader.c7e33100.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRegistration.b8dc9138.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRegistration.b8dc9138.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRegistrationSuccess.fbc6dbab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRegistrationSuccess.fbc6dbab.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRestore.11f05e9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginRestore.11f05e9d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginSignIn.5945ff7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/loginSignIn.5945ff7f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/mainPage.c9d5ccfd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/mainPage.c9d5ccfd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/moderationBlock.b68add48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/moderationBlock.b68add48.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/profile.1445a260.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/profile.1445a260.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/settings.7c2af028.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/settings.7c2af028.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/socialBlock.b5601ec6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/socialBlock.b5601ec6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/stat.ac1bf1f4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/stat.ac1bf1f4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/tags.cc637194.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/tags.cc637194.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/userSection.847a5f80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/static/js/userSection.847a5f80.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/main/resources/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEngine/src/test/java/com/ilmirbaichurin/blogengine/BlogEngineApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilmirbaichurin/blogengine/dao/api/response/dto/UserDTO.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="dev" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1uU8b6qawvBdcqtvfxbD6a3Jwvp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="SELECTIVE" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Gir_Repository\Blog\blog-engine\BlogEngine\src\main\resources\templates" />
+      <recent name="D:\Gir_Repository\Blog\blog-engine\BlogEngine\src\main\resources\static" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ilmirbaichurin.blogengine.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogEngineApplication">
+    <configuration name="ApiPostControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilmirbaichurin.blogengine.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilmirbaichurin.blogengine.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ilmirbaichurin.blogengine.controller.ApiPostControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogEngineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="BlogEngine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ilmirbaichurin.blogengine.BlogEngineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BlogEngineApplication" />
+        <item itemvalue="JUnit.ApiPostControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d2a049c-6d95-4d55-a6a4-1a4dbfed3285" name="Default Changelist" comment="" />
+      <created>1624708877627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624708877627</updated>
+      <workItem from="1624708880990" duration="11311000" />
+      <workItem from="1624773932150" duration="8907000" />
+      <workItem from="1624784938404" duration="2562000" />
+      <workItem from="1625063505365" duration="895000" />
+      <workItem from="1625065481437" duration="9190000" />
+      <workItem from="1625076647416" duration="1219000" />
+      <workItem from="1625077909248" duration="3000000" />
+      <workItem from="1625081004873" duration="2446000" />
+      <workItem from="1625156371104" duration="2171000" />
+      <workItem from="1625583295121" duration="3396000" />
+      <workItem from="1625595740022" duration="3662000" />
+      <workItem from="1625670965260" duration="1489000" />
+      <workItem from="1625757188439" duration="61000" />
+      <workItem from="1630152964834" duration="1297000" />
+      <workItem from="1630221296410" duration="996000" />
+      <workItem from="1630244080949" duration="4243000" />
+      <workItem from="1630336819897" duration="595000" />
+      <workItem from="1630423003617" duration="1191000" />
+      <workItem from="1630841233947" duration="6669000" />
+      <workItem from="1630940835663" duration="1037000" />
+      <workItem from="1631027212506" duration="14170000" />
+      <workItem from="1631115867159" duration="10562000" />
+      <workItem from="1631631997547" duration="9123000" />
+      <workItem from="1631719728964" duration="15717000" />
+      <workItem from="1631805407411" duration="9812000" />
+      <workItem from="1631962115089" duration="5632000" />
+      <workItem from="1631970711932" duration="793000" />
+      <workItem from="1632063564436" duration="7069000" />
+      <workItem from="1632077774692" duration="99000" />
+      <workItem from="1632150060709" duration="1713000" />
+      <workItem from="1632151841425" duration="563000" />
+      <workItem from="1632152458188" duration="218000" />
+      <workItem from="1632152715097" duration="2630000" />
+      <workItem from="1632238058949" duration="630000" />
+      <workItem from="1632557297405" duration="1454000" />
+      <workItem from="1632559794020" duration="318000" />
+      <workItem from="1632560630662" duration="16716000" />
+      <workItem from="1632585629374" duration="517000" />
+      <workItem from="1632641252441" duration="3729000" />
+      <workItem from="1632754179848" duration="12696000" />
+      <workItem from="1632844205704" duration="12137000" />
+      <workItem from="1632929713462" duration="2052000" />
+      <workItem from="1632933032571" duration="776000" />
+      <workItem from="1632933877331" duration="1900000" />
+      <workItem from="1632936272576" duration="358000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArithmeticException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="23" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
