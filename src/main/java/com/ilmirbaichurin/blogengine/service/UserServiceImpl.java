@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.UserResponse;
+import com.ilmirbaichurin.blogengine.api.response.UserResponse;
 import com.ilmirbaichurin.blogengine.repository.UserRepository;
 import org.springframework.stereotype.Service;
 

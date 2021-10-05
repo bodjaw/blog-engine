@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.PostResponse;
+import com.ilmirbaichurin.blogengine.api.response.PostResponse;
 
 public interface PostService {
 

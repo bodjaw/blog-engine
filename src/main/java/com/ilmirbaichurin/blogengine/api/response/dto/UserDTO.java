@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.dao.api.response.dto;
+package com.ilmirbaichurin.blogengine.api.response.dto;
 
 import lombok.*;
 

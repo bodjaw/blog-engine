@@ -1,7 +1,7 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.SettingsResponse;
-import com.ilmirbaichurin.blogengine.dao.model.GlobalSetting;
+import com.ilmirbaichurin.blogengine.api.response.SettingsResponse;
+import com.ilmirbaichurin.blogengine.model.GlobalSetting;
 import com.ilmirbaichurin.blogengine.repository.SettingsRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.ilmirbaichurin.blogengine.dao.api.response;
+package com.ilmirbaichurin.blogengine.api.response;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.dto.UserAuthCheckDTO;
+import com.ilmirbaichurin.blogengine.api.response.dto.UserAuthCheckDTO;
 import lombok.Data;
 
 @Data

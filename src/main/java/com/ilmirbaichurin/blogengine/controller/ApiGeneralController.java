@@ -1,8 +1,8 @@
 package com.ilmirbaichurin.blogengine.controller;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.InitResponse;
-import com.ilmirbaichurin.blogengine.dao.api.response.SettingsResponse;
-import com.ilmirbaichurin.blogengine.dao.api.response.TagResponse;
+import com.ilmirbaichurin.blogengine.api.response.InitResponse;
+import com.ilmirbaichurin.blogengine.api.response.SettingsResponse;
+import com.ilmirbaichurin.blogengine.api.response.TagResponse;
 import com.ilmirbaichurin.blogengine.service.SettingService;
 import com.ilmirbaichurin.blogengine.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;

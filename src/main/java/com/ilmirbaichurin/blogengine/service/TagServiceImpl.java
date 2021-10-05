@@ -1,7 +1,7 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.TagResponse;
-import com.ilmirbaichurin.blogengine.dao.model.Tag;
+import com.ilmirbaichurin.blogengine.api.response.TagResponse;
+import com.ilmirbaichurin.blogengine.model.Tag;
 import com.ilmirbaichurin.blogengine.repository.PostRepository;
 import com.ilmirbaichurin.blogengine.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;

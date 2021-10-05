@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.TagResponse;
+import com.ilmirbaichurin.blogengine.api.response.TagResponse;
 
 public interface TagService {
 

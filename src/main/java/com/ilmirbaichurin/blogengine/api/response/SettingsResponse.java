@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.dao.api.response;
+package com.ilmirbaichurin.blogengine.api.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

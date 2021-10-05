@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.controller;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.PostResponse;
+import com.ilmirbaichurin.blogengine.api.response.PostResponse;
 import com.ilmirbaichurin.blogengine.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

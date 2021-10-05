@@ -1,8 +1,8 @@
 package com.ilmirbaichurin.blogengine.service;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.PostResponse;
-import com.ilmirbaichurin.blogengine.dao.api.response.dto.PostsDTO;
-import com.ilmirbaichurin.blogengine.dao.model.Post;
+import com.ilmirbaichurin.blogengine.api.response.PostResponse;
+import com.ilmirbaichurin.blogengine.api.response.dto.PostsDTO;
+import com.ilmirbaichurin.blogengine.model.Post;
 import com.ilmirbaichurin.blogengine.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

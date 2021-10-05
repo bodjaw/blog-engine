@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.repository;
 
-import com.ilmirbaichurin.blogengine.dao.model.Post;
+import com.ilmirbaichurin.blogengine.model.Post;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;

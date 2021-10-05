@@ -1,6 +1,6 @@
-package com.ilmirbaichurin.blogengine.dao.api.response;
+package com.ilmirbaichurin.blogengine.api.response;
 
-import com.ilmirbaichurin.blogengine.dao.api.response.dto.PostsDTO;
+import com.ilmirbaichurin.blogengine.api.response.dto.PostsDTO;
 import lombok.Data;
 
 import java.util.ArrayList;

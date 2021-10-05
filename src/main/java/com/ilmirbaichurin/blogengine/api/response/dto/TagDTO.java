@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.dao.api.response.dto;
+package com.ilmirbaichurin.blogengine.api.response.dto;
 
 import lombok.*;
 
@@ -6,7 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class TagWithWeight {
+public class TagDTO {
 
     private String name;
     private double weight;

@@ -1,6 +1,6 @@
 package com.ilmirbaichurin.blogengine.repository;
 
-import com.ilmirbaichurin.blogengine.dao.model.Tag;
+import com.ilmirbaichurin.blogengine.model.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

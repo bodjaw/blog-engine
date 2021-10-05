@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.dao.model;
+package com.ilmirbaichurin.blogengine.model;
 
 import lombok.*;
 import org.hibernate.annotations.Type;

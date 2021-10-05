@@ -1,5 +1,7 @@
-package com.ilmirbaichurin.blogengine.dao.model;
+package com.ilmirbaichurin.blogengine.model;
 
+import com.ilmirbaichurin.blogengine.model.Post;
+import com.ilmirbaichurin.blogengine.model.Tag;
 import lombok.Data;
 
 import javax.persistence.*;
