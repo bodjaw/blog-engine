@@ -32,9 +32,6 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostResponse getPostsInfo(int offset, int limit, String mode) {
-        if (offset < 0 || limit < 0) {
-            throw new RuntimeException("Invalid request.");
-        }
         PostResponse postResponse = new PostResponse();
         PageRequest pageRequest = PageRequest.of(offset, limit);
         Page<Post> postPage = getSortedPosts(mode, pageRequest);
@@ -45,7 +42,7 @@ public class PostServiceImpl implements PostService {
         if(posts == null) {
             return postResponse;
         }
-        long postsCount = repository.count();
+        long postsCount = postPage.getTotalElements();
         postResponse.setPostCount(postsCount);
 
         return fillResponse(posts, postResponse);

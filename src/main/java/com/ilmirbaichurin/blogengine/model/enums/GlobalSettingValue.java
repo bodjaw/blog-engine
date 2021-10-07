@@ -1,4 +1,4 @@
-package com.ilmirbaichurin.blogengine.model;
+package com.ilmirbaichurin.blogengine.model.enums;
 
 public enum GlobalSettingValue {
     MULTIUSER_MODE("Многопользовательский режим"),
@@ -6,7 +6,6 @@ public enum GlobalSettingValue {
     STATISTICS_IS_PUBLIC("Показывать всем статистику блога");
 
     private String settingName;
-    private boolean isOn;
 
     GlobalSettingValue(String settingName) {
         this.settingName = settingName;

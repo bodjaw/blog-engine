@@ -2,6 +2,7 @@ package com.ilmirbaichurin.blogengine.service;
 
 import com.ilmirbaichurin.blogengine.api.response.SettingsResponse;
 import com.ilmirbaichurin.blogengine.model.GlobalSetting;
+import com.ilmirbaichurin.blogengine.model.enums.GlobalSettingValue;
 import com.ilmirbaichurin.blogengine.repository.SettingsRepository;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +20,20 @@ public class SettingsServiceImpl implements SettingService {
     @Override
     public SettingsResponse getGlobalSettings() {
         List<GlobalSetting> globalSettings = globalSettingsRepository.findAll();
-        boolean isMultiuserMode = settingModeConverter(globalSettings.get(0).getValue());
-        boolean isPostPreModeration = settingModeConverter(globalSettings.get(1).getValue());
-        boolean isStatisticsIsPublic = settingModeConverter(globalSettings.get(2).getValue());
+        boolean isMultiuserMode = false;
+        boolean isPostPreModeration = false;
+        boolean isStatisticsIsPublic = false;
+        for (GlobalSetting setting : globalSettings) {
+            if (setting.getName().equals(GlobalSettingValue.MULTIUSER_MODE.getName())) {
+                isMultiuserMode = settingModeConverter(setting.getValue());
+            }
+            if (setting.getName().equals(GlobalSettingValue.POST_PREMODERATION.getName())) {
+                isPostPreModeration = settingModeConverter(setting.getValue());
+            }
+            if (setting.getName().equals(GlobalSettingValue.STATISTICS_IS_PUBLIC.getName())) {
+                isStatisticsIsPublic = settingModeConverter(setting.getValue());
+            }
+        }
         return new SettingsResponse(isMultiuserMode, isPostPreModeration, isStatisticsIsPublic);
     }
 
