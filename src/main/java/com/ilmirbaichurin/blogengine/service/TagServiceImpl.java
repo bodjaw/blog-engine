@@ -5,6 +5,8 @@ import com.ilmirbaichurin.blogengine.model.Tag;
 import com.ilmirbaichurin.blogengine.repository.PostRepository;
 import com.ilmirbaichurin.blogengine.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.JpaSort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +25,12 @@ public class TagServiceImpl implements TagService {
 
     @Override
     public TagResponse getTags(String query) {
+
+//        tagRepository.test(JpaSort.unsafe("COUNT(p.id)")).forEach(tag -> System.out.println(tag.getName()));
+
+        System.out.println("__________________________");
+        tagRepository.findAllSortedByCountOfPost().forEach(tag -> System.out.println(tag.getName()));
+        System.out.println("__________________________");
         TagResponse tagResponse = new TagResponse();
         List<Tag> tags;
         if (query == null) {

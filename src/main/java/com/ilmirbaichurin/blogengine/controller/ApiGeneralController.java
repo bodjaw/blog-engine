@@ -30,7 +30,7 @@ public class ApiGeneralController {
     //возвращает общую информацию о блоге
     //авторизация не требуется
     @GetMapping("/init")
-    private ResponseEntity<InitResponse> init() {
+    public ResponseEntity<InitResponse> init() {
         return ResponseEntity.ok(initResponse);
     }
 
@@ -45,7 +45,7 @@ public class ApiGeneralController {
     //если query == null, возвращает все тэги
     //авторизация не требуется
     @GetMapping("/tag")
-    private ResponseEntity<TagResponse> tag(@RequestParam(required = false) String query) {
+    public ResponseEntity<TagResponse> tag(@RequestParam(required = false) String query) {
         return ResponseEntity.ok(tagService.getTags(query));
     }
 }
